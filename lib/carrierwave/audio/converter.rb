@@ -18,11 +18,11 @@ module CarrierWave
       def mp3 opts = {}
         cache_stored_file! if !cached?
 
-        #@options = CarrierWave::Video::Thumbnailer::FFMpegThumbnailerOptions.new(opts)
+        @options = CarrierWave::Audio::Converter::Mp3ConverterOptions.new(opts)
 
         tmp_path = File.join( File.dirname(current_path), "tmpfile.mp3" )
         converter = Mp3Converter.new(current_path, tmp_path)
-        converter.run(opts)
+        converter.run(@options)
         File.rename tmp_path, current_path
       end
 

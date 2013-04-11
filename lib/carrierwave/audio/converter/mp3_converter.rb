@@ -1,4 +1,5 @@
 require 'carrierwave/audio/converter/mp3_converter/options'
+require 'open3'
 
 module CarrierWave
   module Audio
