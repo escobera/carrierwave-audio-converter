@@ -10,8 +10,8 @@ Gem::Specification.new do |gem|
                   lib_dir = File.join(File.dirname(__FILE__),'lib')
                   $LOAD_PATH << lib_dir unless $LOAD_PATH.include?(lib_dir)
 
-                  require 'carrierwave/video/thumbnailer/version'
-                  CarrierWave::Video::Thumbnailer::VERSION
+                  require 'carrierwave/audio/converter/version'
+                  CarrierWave::Audio::Converter::VERSION
                 end
 
   gem.summary     = gemspec['summary']
