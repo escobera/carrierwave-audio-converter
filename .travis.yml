@@ -5,7 +5,6 @@ rvm:
   - jruby-19mode
   - ruby-head
 
-
 branches:
   only:
     - master
