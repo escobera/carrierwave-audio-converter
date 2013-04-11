@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
                   $LOAD_PATH << lib_dir unless $LOAD_PATH.include?(lib_dir)
 
                   require 'carrierwave/video/thumbnailer/version'
-                  CarrierWave::Audio::Converter::VERSION
+                  CarrierWave::Video::Thumbnailer::VERSION
                 end
 
   gem.summary     = gemspec['summary']
